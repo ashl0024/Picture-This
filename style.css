@@ -31,10 +31,16 @@ h4 {
 
 img {
   display: block;
+  width: 100%s;
+  height: auto;
 }
 
 @media (min-width: 960px) {
   .header {
     grid-template-columns: repeat(2, 1fr);
+  }
+  img {
+    max-width: 100%; /* Ensure the square image scales properly */
+    height: auto;
   }
 }
